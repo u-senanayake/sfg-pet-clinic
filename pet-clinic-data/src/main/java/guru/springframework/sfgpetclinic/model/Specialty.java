@@ -5,7 +5,7 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = "spetialities")
+@Table(name = "specialities")
 public class Specialty extends BaseEntity{
 
     @Column(name = "description")
