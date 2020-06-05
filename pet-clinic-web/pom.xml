@@ -44,12 +44,6 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
-        <!--        <dependency>
-                    <groupId>org.projectlombok</groupId>
-                    <artifactId>lombok</artifactId>
-                    <optional>true</optional>
-                </dependency>-->
-        <!-- webjars -->
         <dependency>
             <groupId>org.webjars</groupId>
             <artifactId>webjars-locator-core</artifactId>
@@ -131,11 +125,13 @@
                         <artifactId>bootstrap</artifactId>
                         <version>${webjars-bootstrap.version}</version>
                     </dependency>
+                    <dependency>
+                        <groupId>org.mockito</groupId>
+                        <artifactId>mockito-core</artifactId>
+                        <version>2.23.0</version>
+<!--                        <scope>test</scope>-->
+                    </dependency>
                 </dependencies>
-            </plugin>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.22.0</version>
             </plugin>
         </plugins>
     </build>
